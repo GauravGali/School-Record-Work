@@ -33,6 +33,20 @@ def Merge(lis):
 
     print('The Updated List : ' , lis)
 
+def Show(lis):
+    if lis == []:
+        print('OOPS this stack is empty !')
+    else:
+        print(f'The List : {lis}')
+
+def End(lis):
+    for i in range(1,3):
+        print('............................')
+    print('STACK EMULATED SUCCESFULLY !')
+    for i in range(1,3):
+        print('............................')
+    
+
 
 conditions = """
     1 To Insert a Item
@@ -45,6 +59,12 @@ conditions = """
 """
 
 l = []
+
+print(
+    'STACK EMULATOR \n'
+    '---------------------------'
+    )
+
 
 while True:
     print(conditions)
@@ -62,9 +82,9 @@ while True:
     elif cond == 5:
         Merge(l)
     elif cond == 6:
-        print(l)
+        Show(l)
     elif cond == 7:
-        print('Process Ended')
+        End(l)
         break
     else:
         print('Invalid Entry ! Instead Try : ')
